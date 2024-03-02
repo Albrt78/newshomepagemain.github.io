@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [News Homepage](https://github.com/Albrt78/statspreviewcardcomponent.github.io/tree/main)
--   Live Site URL: [News Homepage](https://albrt78.github.io/statspreviewcardcomponent.github.io/)
+-   Solution URL: [News Homepage](https://github.com/Albrt78/newshomepagemain.github.io)
+-   Live Site URL: [News Homepage](https://albrt78.github.io/newshomepagemain.github.io/)
 
 ### Built with
 
