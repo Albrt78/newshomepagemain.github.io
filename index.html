@@ -22,6 +22,15 @@
             rel="stylesheet"
         />
 
+        <!-- Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
         <title>Frontend Mentor | News homepage</title>
     </head>
     <body>
@@ -34,20 +43,30 @@
 
             <nav class="header-navbar" id="panel">
                 <ul class="header-navbar_content">
-                    <li class="focus"><a href="#" class="header-navbar_link">Home</a></li>
-                    <li class="focus"><a href="#" class="header-navbar_link">New</a></li>
-                    <li class="focus"><a href="#" class="header-navbar_link">Popular</a></li>
-                    <li class="focus"><a href="#" class="header-navbar_link">Trending</a></li>
-                    <li class="focus">
+                    <li>
+                        <a href="#" class="header-navbar_link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-navbar_link">New</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-navbar_link">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-navbar_link">Trending</a>
+                    </li>
+                    <li>
                         <a href="#" class="header-navbar_link">Categories</a>
                     </li>
                 </ul>
             </nav>
 
             <section class="header-hamburger_menu">
-                <label for="check" class="header-menu">
-                    <input type="checkbox" name="checkbox" id="check" />
-                </label>
+                <i
+                    class="fa-solid fa-bars-staggered"
+                    id="hamburger-icon"
+                    onclick="changeIcon(this)"
+                ></i>
             </section>
         </header>
 
@@ -87,13 +106,19 @@
                 <h1 class="main-trending_title">New</h1>
 
                 <article class="main-trending_info">
-                    <h2 class="main-trending_subtitle">Hydrogen VS Electric Cars</h2>
-                    <p class="main-trending_description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    <h2 class="main-trending_subtitle">
+                        Hydrogen VS Electric Cars
+                    </h2>
+                    <p class="main-trending_description">
+                        Will hydrogen-fueled cars ever catch up to EVs?
+                    </p>
                 </article>
                 <hr />
 
                 <article class="main-trending_info">
-                    <h2 class="main-trending_subtitle">The Downsides of AI Artistry</h2 class="main-trending_subtitle">
+                    <h2 class="main-trending_subtitle">
+                        The Downsides of AI Artistry
+                    </h2>
                     <p class="main-trending_description">
                         What are the possible adverse effects of on-demand AI
                         image generation?
@@ -102,7 +127,9 @@
                 <hr />
 
                 <article class="main-trending_info">
-                    <h2 class="main-trending_subtitle">Is VC Funding Drying Up?</h2>
+                    <h2 class="main-trending_subtitle">
+                        Is VC Funding Drying Up?
+                    </h2>
                     <p class="main-trending_description">
                         Private funding by VC firms is down 50% YOY. We take a
                         look at what that means.
@@ -117,18 +144,22 @@
                 <article class="trending-news_description">
                     <h3 class="trending-news_title">01</h3>
                     <h4 class="trending-news_subtitle">Reviving Retro PCs</h4>
-                    <p class="trending-news_detail">What happens when old PCs are given modern upgrades?</p>
+                    <p class="trending-news_detail">
+                        What happens when old PCs are given modern upgrades?
+                    </p>
                 </article>
             </section>
 
             <section class="trending-news_content">
                 <img
                     src="assets/images/image-top-laptops.jpg"
-                    alt="Top Laptops" 
+                    alt="Top Laptops"
                 />
                 <article class="trending-news_description">
                     <h3 class="trending-news_title">02</h3>
-                    <h4 class="trending-news_subtitle">Top 10 Laptops of 2022</h4>
+                    <h4 class="trending-news_subtitle">
+                        Top 10 Laptops of 2022
+                    </h4>
                     <p class="trending-news_detail">
                         Our best picks for various needs and budgets.
                     </p>
@@ -155,8 +186,10 @@
             <a
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="#">Albrt78</a>.
+            >
+                Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.frontendmentor.io?ref=challenge">Albrt78</a>.
         </footer>
 
         <script src="script.js"></script>
