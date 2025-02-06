@@ -1,13 +1,8 @@
 const hamburgerMenu = document.querySelector("#panel");
-const hamburgerButton = document.querySelector("#check");
+const hamburgerButton = document.querySelector("#hamburger-icon");
 
 // Function for hamburger Button
-const checkedInput = () => {
-    if (hamburgerButton.checked) {
-        hamburgerMenu.classList.toggle("active");
-    } else {
-        hamburgerMenu.classList.remove("active");
-    }
+const changeIcon = (icon) => {
+    hamburgerMenu.classList.toggle("active");
+    icon.classList.toggle("fa-square-xmark");
 };
-
-hamburgerButton.onclick = checkedInput;
