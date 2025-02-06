@@ -7,6 +7,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -51,7 +52,7 @@ body main .main-content {
 }
 body main .main-content .main-content_img img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 body main .main-content .main-content_information {
   display: flex;
@@ -60,7 +61,7 @@ body main .main-content .main-content_information {
   padding-top: 1.8rem;
 }
 body main .main-content .main-content_information .main-content_title {
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 800;
   width: 50%;
   text-align: left;
@@ -72,8 +73,8 @@ body main .main-content .main-content_information .main-content_description {
 }
 body main .main-content .main-content_information .main-content_description .main-content_detail {
   color: hsl(236, 13%, 42%);
-  font-size: 1.8rem;
-  padding-bottom: 2.2rem;
+  font-size: 2rem;
+  padding-bottom: 4.4rem;
   line-height: 1.6;
 }
 body main .main-content .main-content_information .main-content_description .main-content_button {
@@ -328,7 +329,7 @@ body .attribution a:visited {
     width: 6rem;
   }
   body header .header-hamburger_menu {
-    display: block;
+    display: inline-block;
   }
   body header .header-hamburger_menu .fa-solid {
     font-size: 4rem;
@@ -339,12 +340,12 @@ body .attribution a:visited {
     left: 0;
     right: 0;
     height: auto;
-    width: 60%;
-    padding: 15rem 5rem;
+    width: 100%;
+    padding: 13rem 5rem;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 0 1.3rem 1.3rem 0;
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 0 0 1.3rem 1.3rem;
     transform-origin: left;
     transition: all 0.2s ease-in-out;
     margin-left: -100%;
@@ -353,12 +354,15 @@ body .attribution a:visited {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 2rem;
   }
   body header .header-navbar .header-navbar_content li {
     width: 100%;
     margin-bottom: 5%;
-    text-align: right;
+    text-align: center;
+    background-color: hsl(36, 100%, 99%);
+    padding: 2rem 0;
+    border-radius: 100vw;
   }
   body header .header-navbar .header-navbar_content li .header-navbar_link {
     font-size: 2rem;
