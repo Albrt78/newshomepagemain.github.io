@@ -65,49 +65,6 @@ body {
         .header-hamburger_menu {
             z-index: 9999;
             display: none;
-
-            .header-menu {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-
-                &::before,
-                &::after {
-                    content: "";
-                    width: $hamburger-line-width;
-                    height: $hamburger-line-height;
-                    background-color: $Very-dark-blue;
-                }
-
-                input {
-                    width: $hamburger-line-width;
-                    height: $hamburger-line-height;
-                    background-color: $Very-dark-blue;
-                    appearance: none;
-                    padding: 0;
-                    margin: 0;
-                    outline: none;
-                    pointer-events: none;
-                    transition: $animation-timing;
-
-                    &:checked {
-                        opacity: 0;
-                        width: 0;
-                    }
-                }
-
-                &:has(input:checked)::before {
-                    transform-origin: top left;
-                    transition: $animation-timing;
-                    transform: translateY(0px) rotate(35deg);
-                }
-
-                &:has(input:checked)::after {
-                    transform-origin: bottom left;
-                    transition: $animation-timing;
-                    transform: translateY(0px) rotate(-35deg);
-                }
-            }
         }
     }
 
@@ -265,7 +222,6 @@ body {
     .attribution {
         font-size: 11px;
         text-align: center;
-        // padding-top: 5.5%;
 
         a {
             color: $attribution-link-color;
@@ -514,19 +470,9 @@ body {
 
             .header-hamburger_menu {
                 display: block;
-                padding-top: 0.5rem;
 
-                .header-menu {
-                    &::before,
-                    &::after {
-                        width: 70px;
-                        height: 7px;
-                    }
-
-                    input {
-                        width: 50px;
-                        height: 7px;
-                    }
+                .fa-solid {
+                    font-size: 4rem;
                 }
             }
 
@@ -536,14 +482,14 @@ body {
                 left: 0;
                 right: 0;
                 height: auto;
-                width: 65%;
+                width: 60%;
                 padding: 15rem 5rem;
                 background-color: rgba(255, 255, 255, 0.2);
                 backdrop-filter: blur(30px);
                 -webkit-backdrop-filter: blur(20px);
-                border-radius: 1.3rem;
+                border-radius: 0 1.3rem 1.3rem 0;
                 transform-origin: left;
-                transition: all 0.3s ease-in-out;
+                transition: all 0.2s ease-in-out;
                 margin-left: -100%;
 
                 .header-navbar_content {
@@ -588,8 +534,8 @@ body {
             }
 
             .header-hamburger_menu {
-                .header-menu {
-                    gap: 0.7rem;
+                .fa-solid {
+                    font-size: 3.3rem;
                 }
             }
         }
@@ -635,18 +581,21 @@ body {
             }
 
             .header-hamburger_menu {
-                padding-top: 0;
+                .fa-solid {
+                    font-size: 2.7rem;
+                }
+            }
 
-                .header-menu {
-                    gap: 0.5rem;
+            .header-navbar {
+                padding-inline-start: 2.7rem;
 
-                    &::after,
-                    &::before {
-                        width: 50px;
-                    }
+                .header-navbar_content {
+                    li {
+                        text-align: left;
 
-                    input {
-                        width: 30px;
+                        .header-navbar_link {
+                            font-size: 1.3rem;
+                        }
                     }
                 }
             }
@@ -692,6 +641,9 @@ body {
 
 @media (max-width: 395.98px) {
     body {
+        header {
+            padding: 13.2% 7% 2rem 7%;
+        }
         .trending-news {
             .trending-news_content {
                 img {
