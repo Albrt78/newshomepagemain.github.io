@@ -366,7 +366,7 @@ body .attribution a:visited {
     -webkit-backdrop-filter: blur(30px);
     border-radius: 0 0 1.3rem 1.3rem;
     transform-origin: left;
-    transition: all 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
     margin-left: -100%;
   }
   body header .header-navbar .header-navbar_content {
