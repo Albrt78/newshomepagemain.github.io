@@ -509,7 +509,7 @@ body {
                 height: 100dvh;
                 width: 70%;
                 padding-inline: 4rem;
-                padding-block-start: 15rem;
+                padding-block: 5rem;
                 background-color: rgba(255, 255, 255, 0.2);
                 backdrop-filter: blur(30px);
                 -webkit-backdrop-filter: blur(30px);
@@ -633,7 +633,6 @@ body {
 
             .header-navbar {
                 padding-inline: 2rem;
-                padding-block-start: 5rem;
 
                 .header-navbar_content {
                     li {
