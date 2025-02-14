@@ -432,6 +432,18 @@ body .attribution a:visited {
     max-width: 100%;
   }
 }
+@media (min-width: 667px) {
+  body header .header-navbar {
+    overflow-y: scroll;
+    width: 60%;
+  }
+  body header .header-navbar .header-navbar_content li {
+    padding: 1.3rem 0;
+  }
+  body header .header-navbar .header-navbar_content li .header-navbar_link {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 430.98px) {
   body header .header-logo img {
     width: 100%;
@@ -483,5 +495,67 @@ body .attribution a:visited {
   }
   body main .trending-news .trending-news_content img {
     width: 7rem;
+  }
+}
+@media (max-width: 320.98px) {
+  body header {
+    padding: 10% 7%;
+  }
+  body header .header-logo img {
+    width: 90%;
+  }
+  body header .header-hamburger_menu .fa-solid {
+    font-size: 2.5rem;
+  }
+  body header .header-navbar .header-navbar_content li {
+    padding: 1rem 0;
+  }
+  body header .header-navbar .header-navbar_content li .header-navbar_link {
+    font-size: 1rem;
+  }
+  body main .main-content .main-content_information {
+    padding-top: 1.3rem;
+  }
+  body main .main-content .main-content_information .main-content_title {
+    font-size: 2rem;
+  }
+  body main .main-content .main-content_information .main-content_description .main-content_detail {
+    font-size: 0.8rem;
+    padding-bottom: 1.3rem;
+  }
+  body main .main-content .main-content_information .main-content_description .main-content_button {
+    padding-block: 1rem;
+    font-size: 0.8rem;
+  }
+  body main .main-trending .main-trending_title {
+    font-size: 1.7rem;
+  }
+  body main .main-trending .main-trending_info .main-trending_subtitle {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+  }
+  body main .main-trending .main-trending_info .main-trending_description {
+    font-size: 0.7rem;
+    padding-bottom: 1.2rem;
+  }
+  body main .trending-news .trending-news_content {
+    gap: 1.2rem;
+  }
+  body main .trending-news .trending-news_content img {
+    width: 5rem;
+  }
+  body main .trending-news .trending-news_content .trending-news_description .trending-news_title {
+    font-size: 1.5em;
+    padding-bottom: 0.5rem;
+  }
+  body main .trending-news .trending-news_content .trending-news_description .trending-news_subtitle {
+    font-size: 0.9rem;
+  }
+  body main .trending-news .trending-news_content .trending-news_description .trending-news_detail {
+    font-size: 0.7rem;
+  }
+  body .attribution {
+    font-size: 0.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
