@@ -224,7 +224,6 @@ body {
     .attribution {
         font-size: 2rem;
         text-align: center;
-        padding-top: 2rem;
 
         a {
             color: $attribution-link-color;
@@ -506,17 +505,16 @@ body {
                 position: fixed;
                 top: 0;
                 left: 0;
-                height: 100dvh;
+                height: 100vh;
                 width: 70%;
                 padding-inline: 4rem;
                 padding-block: 5rem;
                 background-color: rgba(255, 255, 255, 0.2);
                 backdrop-filter: blur(30px);
                 -webkit-backdrop-filter: blur(30px);
-                border-radius: 0 0 1.3rem 1.3rem;
                 margin-left: -100%;
                 transform-origin: left;
-                transition: margin 0.2s linear;
+                transition: margin 0.3s ease;
 
                 .header-navbar_content {
                     display: flex;
