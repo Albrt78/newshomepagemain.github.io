@@ -432,7 +432,7 @@ body .attribution a:visited {
     max-width: 100%;
   }
 }
-@media (min-width: 667px) {
+@media (max-width: 667px) {
   body header .header-navbar {
     overflow-y: scroll;
     width: 60%;
