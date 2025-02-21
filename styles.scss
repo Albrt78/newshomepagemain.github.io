@@ -614,7 +614,7 @@ body {
     }
 }
 
-@media (min-width: 667px) {
+@media (max-width: 667px) {
     body {
         header {
             .header-navbar {
