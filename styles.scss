@@ -46,8 +46,8 @@ body {
         .header-navbar {
             .header-navbar_content {
                 display: flex;
+                align-items: center;
                 gap: 5rem;
-                padding-top: 1.3rem;
 
                 li {
                     .header-navbar_link {
